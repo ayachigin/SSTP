@@ -1,5 +1,8 @@
 module Network.SSTP
     ( dispatchEvent
+    , simpleSSTP
+    , Request (..)
+    , emptyRequest
     ) where
 
 import Network
