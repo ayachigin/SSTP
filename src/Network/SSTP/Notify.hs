@@ -36,7 +36,7 @@ instance Show Request where
              , join "\r\n" references
              ]
         where
-          references = map (\(ref, n) -> "Reference" ++ show n ++ ": " ++ ref) (zip (_reference r) [1..])
+          references = map (\(ref, n) -> "Reference" ++ show n ++ ": " ++ ref) (zip (_reference r) [0..])
 
 -- |
 -- Make request string from Request.
